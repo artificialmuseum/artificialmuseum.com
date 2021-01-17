@@ -32,11 +32,11 @@
     "url": "https://github.com/artificialmuseum/artificialmuseum.com/issues"
   },
   "dependencies": {
-    "@magic/core": "0.0.99"
+    "@magic/core": "0.0.102"
   },
   "devDependencies": {
-    "@magic/format": "0.0.20",
-    "@magic/test": "0.1.59"
+    "@magic/format": "0.0.21",
+    "@magic/test": "0.1.60"
   },
   "keywords": [
     "magic",
