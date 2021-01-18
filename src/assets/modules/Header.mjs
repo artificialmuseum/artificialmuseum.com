@@ -5,6 +5,8 @@ export const View = () =>
     ]),
 
     h1(['Artificial', br(), 'Museum']),
+
+    h2('Opening: 1.2.2021'),
   ])
 
 export const style = v => ({
