@@ -54,12 +54,12 @@ export const View = state =>
   ])
 
 export const style = v => ({
-  position: 'relative',
-  padding: `5em 0 .5em ${v.paddingLeft}`,
-  clear: 'both',
-  margin: '2em 0 0',
   backgroundColor: v.background.dark,
+  clear: 'both',
   color: v.text.dark,
+  margin: '2em 0 0',
+  padding: `5em 0 .5em ${v.paddingLeft}`,
+  position: 'relative',
 
   a: {
     color: v.link.dark,
