@@ -1,5 +1,5 @@
 export const View = ({ artists, collectives, staticUrl, team }) => [
-  HeaderImage({ staticUrl }),
+  CallToAction({ src: `${staticUrl}/about/about_header.jpg` }),
 
   Slogan(["WE DON'T NEED SPACE,", 'TIME IS IRRELEVANT,', 'OBJECTS STAY AS USEFUL', 'AS THE USER.']),
 
@@ -16,7 +16,7 @@ export const View = ({ artists, collectives, staticUrl, team }) => [
     ]),
   ]),
 
-  AboutImage({ staticUrl }),
+  AboutImage({ src: `${staticUrl}/about/about_preview.jpg` }),
 
   div({ class: 'text' }, [
     b('TheSystemCollective'),
