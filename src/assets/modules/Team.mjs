@@ -9,7 +9,7 @@ export const View = state =>
     ),
   ])
 
-export const style = {
+export const style = v => ({
   display: 'inline-block',
 
   li: {
@@ -34,4 +34,12 @@ export const style = {
       margin: 0,
     },
   },
-}
+
+  [`@media screen and (min-width: ${v.widths.tablet})`]: {
+    li: {
+      float: 'left',
+      width: '27vw',
+      height: '27vw',
+    },
+  },
+})
