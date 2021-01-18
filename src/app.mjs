@@ -11,6 +11,103 @@ export const state = {
 
   staticUrl: 'https://static.thesystem.at',
 
+  social: {
+    instagram: 'https://www.instagram.com/theartificialmuseum/',
+    youtube: 'https://www.youtube.com/channel/UCBwKwgk_eU8w-ccmTOFXADQ',
+  },
+
+  collectives: [
+    'Dachsbau',
+    { to: 'https://metalab.at', text: 'Metalab' },
+    { to: 'https://notgalerie.at', text: 'Notgalerie' },
+    { to: 'https://www.facebook.com/sandkastensyndikat/', text: 'Sandkasten Syndikat' },
+    { to: 'https://setzkastenwien.at/', text: 'Setzkasten Wien' },
+    'Villa Schapira',
+    { to: 'http://mysoundofmusic.at', text: 'Zirkus Mops' },
+  ],
+
+  artists: [
+    {
+      text: 'Adam Lebesmühlbacher',
+      to: 'http://www.mysoundofmusic.at',
+    },
+    {
+      text: 'Chora Malik',
+    },
+    {
+      text: 'Litto / Daniela Weiss',
+      to: 'https://litto.work',
+    },
+    {
+      text: 'Dagmar Rohm',
+      to: 'http://dagmarrohm.at/',
+    },
+    {
+      text: 'David Wuchte',
+      to: 'https://wuchte.at',
+    },
+    {
+      text: 'Elet.Irrlicht',
+      to: 'https://elet.cc/',
+    },
+    {
+      text: 'Guillermo Tellechea',
+    },
+    {
+      text: 'Heinz Seidenbusch',
+    },
+    {
+      text: 'Jascha Ehrenreich',
+      to: 'https://jaeh.at',
+    },
+    {
+      text: 'Jay Vaughan',
+      to: 'https://soundcloud.com/ibisum',
+    },
+    {
+      text: 'Marco Otoya',
+    },
+    {
+      text: 'Markus Liszt',
+    },
+    {
+      text: 'Meks',
+      to: 'https://soundcloud.com/user-945933947',
+    },
+    {
+      text: 'Miss Bubblebliss',
+      to: 'http://missbubblebliss.at/',
+    },
+    {
+      text: 'Noémi Kiss',
+      to: 'http://noemikiss.at/',
+    },
+    {
+      text: 'Oktogon / Sebastian Konzett',
+      to: 'https://www.instagram.com/saveokto/',
+    },
+    {
+      text: 'Reinhold Zisser',
+      to: 'http://reinholdzisser.com/',
+    },
+    {
+      text: 'Selina Novak',
+      to: 'http://www.mysoundofmusic.at',
+    },
+    {
+      text: 'Stefan Stürzer',
+      to: 'https://absturz.info/',
+    },
+    {
+      text: 'Stefan Voglsinger',
+      to: 'https://setzkastenwien.at/',
+    },
+    {
+      text: 'Zirkus Mops',
+      to: 'http://www.mysoundofmusic.at',
+    },
+  ],
+
   seo: {
     name: 'ArtificialMuseum',
     url: 'https://artificialmuseum.com/',
