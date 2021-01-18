@@ -30,7 +30,7 @@ export const View = state =>
         h2('Privacy notice'),
 
         h3('No spying'),
-        p('We promise to never analyze, track or sell any data about you.'),
+        p('We promise to never analyze, track, or sell any data about you.'),
         p('We will also never save any data without asking explicitly.'),
 
         h3('Local data'),
