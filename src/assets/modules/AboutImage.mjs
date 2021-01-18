@@ -1,7 +1,7 @@
-export const View = ({ staticUrl }) =>
+export const View = ({ src }) =>
   img({
     class: 'AboutImage',
-    src: `${staticUrl}/about/about_preview.jpg`,
+    src,
     width: '1200',
     height: '900',
   })
