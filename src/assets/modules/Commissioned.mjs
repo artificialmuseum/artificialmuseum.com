@@ -20,6 +20,7 @@ export const View = ({ staticUrl, title }) =>
 export const style = {
   display: 'inline-block',
   width: '100%',
+  clear: 'both',
 
   img: {
     clear: 'none',
