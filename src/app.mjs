@@ -5,7 +5,7 @@ export const state = {
 
   team: [
     { name: 'LITTO', job: ['ARTISTIC DIRECTION', '3D ART, DESIGN'], url: 'https://litto.work' },
-    { name: 'JASCHA', job: ['DEVELOPMENT'], url: 'https://jaeh.at' },
+    { name: 'JASCHA', job: ['PROGRAMMING', '3D ART'], url: 'https://jaeh.at' },
     { name: 'DAVID', job: ['3D ART'], url: 'https://wuchte.at' },
   ],
 
@@ -83,7 +83,7 @@ export const state = {
       to: 'http://noemikiss.at/',
     },
     {
-      text: 'Oktogon / Sebastian Konzett',
+      text: 'Oktogon',
       to: 'https://www.instagram.com/saveokto/',
     },
     {
