@@ -1,9 +1,4 @@
-export const View = ({ src }) => img({
-  class: 'CallToAction',
-  src,
-  width: '1200',
-  height: '900',
-})
+export const View = () => VideoContainer()
 
 export const style = {
   float: 'right',
