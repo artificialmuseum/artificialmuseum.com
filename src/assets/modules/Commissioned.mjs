@@ -1,5 +1,5 @@
 export const View = ({ staticUrl, title }) =>
-  div({ class: 'Commissioned text' }, [
+  div({ class: 'Commissioned' }, [
     h2(title),
 
     Link({ to: 'https://koer.or.at' }, [
@@ -17,10 +17,12 @@ export const View = ({ staticUrl, title }) =>
     ]),
   ])
 
-export const style = {
+export const style = v => ({
   display: 'inline-block',
   width: '100%',
   clear: 'both',
+  float: 'none',
+  margin: `0 0 2em ${v.paddingLeft}`,
 
   img: {
     clear: 'none',
@@ -30,4 +32,4 @@ export const style = {
     maxWidth: '40%',
     width: 'auto',
   },
-}
+})
