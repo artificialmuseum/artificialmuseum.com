@@ -22,7 +22,7 @@ export const style = v => ({
   width: '100%',
   clear: 'both',
   float: 'none',
-  margin: `0 0 2em ${v.paddingLeft}`,
+  padding: `0 0 2em ${v.paddingLeft}`,
 
   img: {
     clear: 'none',
