@@ -9,7 +9,7 @@ export const state = {
     { name: 'DAVID', job: ['3D ART'], url: 'https://wuchte.at' },
   ],
 
-  staticUrl: 'https://static.thesystem.at',
+  staticUrl: 'https://static.artificialmuseum.com',
 
   social: {
     instagram: 'https://www.instagram.com/theartificialmuseum/',
