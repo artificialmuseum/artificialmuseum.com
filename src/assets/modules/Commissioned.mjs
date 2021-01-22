@@ -25,11 +25,21 @@ export const style = v => ({
   padding: `0 0 2em ${v.paddingLeft}`,
 
   img: {
-    clear: 'none',
-    float: 'left',
-    margin: '0 3% 0 0',
+    clear: 'both',
+    display: 'block',
     maxHeight: '60px',
-    maxWidth: '40%',
-    width: 'auto',
+    margin: '5px 0',
+  },
+
+  [`@media screen and (min-width: ${v.widths.tablet})`]: {
+    img: {
+      float: 'left',
+      margin: '0 3% 0 0',
+      maxHeight: '60px',
+      maxWidth: '40%',
+      width: 'auto',
+      clear: 'none',
+      display: 'inline',
+    },
   },
 })
