@@ -1,0 +1,33 @@
+{
+  "name": "artificialmuseum.com",
+  "version": "0.0.1",
+  "description": "Artificial Museum - TheSystemCollective - Production bundles",
+  "private": true,
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "grundstein-server --dir ./docs --port 8000 --cors '*'",
+    "rebuild": "cp ../ar/docs/* ./docs/ -r"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artificialmuseum/artificialmuseum.com.git"
+  },
+  "author": "TheSystemCollective",
+  "bugs": {
+    "url": "https://github.com/artificialmuseum/artificialmuseum.com/issues"
+  },
+  "homepage": "https://artificialmuseum.com",
+  "devDependencies": {
+    "@grundstein/gss": "github:grundstein/gss"
+  },
+  "contributors": [
+    {
+      "name": "jascha ehrenreich",
+      "github": "jaeh"
+    },
+    {
+      "name": "daniela weiss",
+      "github": "mslitto"
+    }
+  ]
+}
