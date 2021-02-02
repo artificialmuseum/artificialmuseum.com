@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "grundstein-server --dir ./docs --port 8000 --cors '*'",
-    "rebuild": "cp ../ar/docs/* ./docs/ -r"
+    "build": "cp ../ar/docs/* ./docs/ -r"
   },
   "repository": {
     "type": "git",
