@@ -1,5 +1,5 @@
 {
-  "short_name": "thesystem.at",
+  "short_name": "arm",
   "name": "Artificial Museum",
   "icons": [
     {
@@ -16,6 +16,6 @@
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background-color": "#ffffff",
-  "theme-color": "#000000"
+  "background-color": "#fafafa",
+  "theme-color": "#0c0c0c"
 }
