@@ -101,6 +101,13 @@ th {
   padding: 0;
   text-align: left;
 }
+b {
+  font-weight: 500;
+  font-size: 1.05em;
+}
+i {
+  font-style: italic;
+}
 @font-face {
   font-family: 'Noto';
   font-style: italic;
@@ -115,7 +122,7 @@ th {
 @font-face {
   font-family: 'Noto';
   font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   src:
     local('Noto Sans SemiBold Italic'),
@@ -137,7 +144,7 @@ th {
 /* @font-face {
   font-family: 'Noto';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   src:
     local('Noto Sans Semi Bold'),
@@ -237,7 +244,7 @@ h4 {
   font-size: 1.1em;
 }
 h5 {
-  font-weight: 600;
+  font-weight: 500;
 }
 h1,
 h2,
@@ -265,8 +272,7 @@ nav li {
     color: #333;
     cursor: pointer;
     float: left;
-    font-size: 18px;
-    height: 22px;
+    font-size: 17px;
     margin: 0 1em 0 0;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -274,7 +280,8 @@ nav li {
             user-select: none;
   }
 nav li.active {
-      border-bottom: 2px solid;
+      -webkit-text-decoration: underline 2px;
+              text-decoration: underline 2px;
       color: #0c0c0c;
     }
 nav li:last-child {
@@ -316,26 +323,24 @@ footer.main nav.left {
   }
 header.main {
   top: 0;
-  padding: 10px 15px 5px;
+  padding: 7px 15px 0;
 }
-header.main nav {
-    margin: 2px 0 0;
-  }
 header.main .logo {
     display: inline-block;
   }
 header.main .logo span {
       cursor: pointer;
       float: left;
-      font-size: 21px;
-      font-weight: 600;
+      font-size: 18px;
+      font-weight: 500;
       margin: -2px 5px 0;
       padding: 0;
+      line-height: 1;
     }
 header.main .logo svg {
       cursor: pointer;
       float: left;
-      height: 17px;
+      height: 15px;
     }
 footer.main {
   bottom: 0;
@@ -348,17 +353,17 @@ footer.main nav li {
   background-color: #fafafa;
   display: none;
   left: 0;
-  min-height: calc(100% - 80px);
+  min-height: calc(100% - 70px);
   overflow-x: hidden;
   padding: 20px;
   position: absolute;
-  top: 40px;
+  top: 35px;
   width: 100%;
 }
 .screen h2,
   .screen h3,
   .screen h4 {
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
   }
 .screen h2 {
@@ -393,19 +398,26 @@ footer.main nav li {
       width: 100%;
     }
 .screen[data-name="about"].visible .headers svg.logo {
+        float: left;
         fill: #0c0c0c;
-        height: 35px;
+        height: 74px;
         margin: 0 15px 0 0;
       }
 .screen[data-name="about"].visible .headers h2 {
-        font-size: 46px;
+        float: left;
+        font-size: 45px;
         text-transform: none;
-        margin: 0;
-        line-height: 1;
+        margin: 1px 0 0;
+        line-height: 0.7;
       }
+.screen[data-name="about"].visible .headers h2 span:last-child {
+          display: block;
+          margin: 7px 0 0 -5px;
+        }
 .screen[data-name="about"].visible .slogan {
+      letter-spacing: -1px;
       font-size: 50px;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 1;
       padding: 0 25px;
       width: 100%;
@@ -494,7 +506,7 @@ footer.main nav li {
 .screen[data-name="about"].visible .team li h5 {
           font-size: 14px;
           line-height: 25px;
-          margin: 0.2em 0;
+          margin: 4vw 0 0.3em;
         }
 .screen[data-name="about"].visible .team li p {
           font-size: 12px;
@@ -606,7 +618,7 @@ footer.main nav li {
   height: calc(100% - 80px);
   outline: none;
   position: fixed;
-  top: 40px;
+  top: 35px;
 }
 .content {
   position: relative;
@@ -624,6 +636,10 @@ footer.main nav li {
     left: 0;
     position: absolute;
     top: 0;
+  }
+.Partners img {
+    max-height: 62px;
+    width: auto;
   }
 button {
   border: 0 none;
@@ -1192,7 +1208,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   margin: 13px 19px;
 }
 .leaflet-popup-content h3 {
-    font-weight: 600;
+    font-weight: 500;
     margin: 10px 0;
     text-transform: uppercase;
   }
@@ -1448,14 +1464,6 @@ body.three-running {
   }
 }
 @media screen and (min-width: 500px) {
-      .screen[data-name="about"].visible .headers svg.logo {
-        float: left;
-      }
-
-      .screen[data-name="about"].visible .headers h2 {
-        float: left;
-        line-height: 0.7;
-      }
       .screen[data-name="about"].visible .commissioned img {
         margin: 0 3% 0 0;
         float: left;
@@ -1488,19 +1496,6 @@ body.three-running {
   .detail {
     display: inline-block;
   }
-        .screen[data-name="about"].visible .headers svg.logo {
-          height: 96px;
-        }
-
-        .screen[data-name="about"].visible .headers h2 {
-          font-size: 2.5em;
-          margin: 4px 0 0;
-        }
-
-        .screen[data-name="about"].visible .headers h3 {
-          font-size: 1.5em;
-          margin: 31px 0 0;
-        }
           .screen[data-name="about"].visible .team li h5 {
             font-size: inherit;
             line-height: inherit;
