@@ -219,7 +219,8 @@ body {
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
   padding: 0 15px;
-  width: 100vw;
+  width: 100%;
+  position: absolute;
 }
 body::-webkit-scrollbar {
     width: 8px;
@@ -1455,8 +1456,12 @@ body.three-running {
     background: transparent;
   }
 #three-video {
-  left: 100vw;
+  left: 0;
+  top: 0;
   position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
 }
 @media screen and (max-height: 500px) and (orientation: landscape) {
   #map-container {
