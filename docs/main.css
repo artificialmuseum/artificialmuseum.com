@@ -514,94 +514,94 @@ footer.main nav li {
           line-height: 1.3em;
           margin: 0;
         }
-.screen[data-name="list"] .detail {
+.screen.list .detail {
       border-top: 1px solid #aaa;
       padding: 0 0 1em;
       position: relative;
       width: 100%;
     }
-.screen[data-name="list"] .detail.visible .info {
+.screen.list .detail.visible .info {
           max-height: 1000px;
 
           /* transition: max-height var(--transition-duration); */
         }
-.screen[data-name="list"] .detail.visible .info .preview {
+.screen.list .detail.visible .info .preview {
             margin: 1em 0;
           }
-.screen[data-name="list"] .detail.visible a.info img {
+.screen.list .detail.visible a.info img {
           margin: 2px 0 0;
         }
-.screen[data-name="list"] .detail.visible h5.info {
+.screen.list .detail.visible h5.info {
           margin: 1em 0 0.2em;
         }
-.screen[data-name="list"] .detail .description {
+.screen.list .detail .description {
         margin: 1em 0;
       }
-.screen[data-name="list"] .detail .description p {
+.screen.list .detail .description p {
           margin: 0;
         }
-.screen[data-name="list"] .detail h3 {
+.screen.list .detail h3 {
         cursor: pointer;
         font-size: 1.6em;
-        margin: 0 0 0.5em;
+        margin: 0.5em 0;
         text-transform: uppercase;
       }
-.screen[data-name="list"] .detail .title {
+.screen.list .detail .title {
         font-size: 0.9em;
         line-height: 1.4;
-        margin: 1em 0;
+        margin: 1em 0 0;
         text-transform: uppercase;
       }
-.screen[data-name="list"] .detail .title span {
+.screen.list .detail .title span {
           display: inline-block;
           height: 1.5em;
           vertical-align: top;
         }
-.screen[data-name="list"] .detail .logo {
+.screen.list .detail .logo {
         width: 1.5em;
         height: 1.5em;
         margin: 0 0.2em 0 0;
       }
-.screen[data-name="list"] .detail .artists li, .screen[data-name="list"] .detail .artists3d li {
+.screen.list .detail .artists li, .screen.list .detail .artists3d li {
           display: inline-block;
           margin: 0 0 0.3em;
           width: 100%;
         }
-.screen[data-name="list"] .detail .artists li span, .screen[data-name="list"] .detail .artists3d li span {
+.screen.list .detail .artists li span, .screen.list .detail .artists3d li span {
             margin: 0 0.5em 0 0;
             float: left;
           }
-.screen[data-name="list"] .detail .artists li a, .screen[data-name="list"] .detail .artists3d li a {
+.screen.list .detail .artists li a, .screen.list .detail .artists3d li a {
             display: inline-block;
           }
-.screen[data-name="list"] .detail .artists li img, .screen[data-name="list"] .detail .artists3d li img {
+.screen.list .detail .artists li img, .screen.list .detail .artists3d li img {
             height: 1em;
             float: left;
             margin: 2px 0 0;
           }
-.screen[data-name="list"] .detail .button.close {
+.screen.list .detail .button.close {
           display: inline-block;
           margin: 1em 0;
           width: auto;
         }
-.screen[data-name="list"] .detail .arrow-up {
+.screen.list .detail .arrow-up {
         display: block;
         float: right;
         margin: 3em auto 0;
         width: 23px;
       }
-.screen[data-name="list"] .detail .info {
+.screen.list .detail .info {
         max-height: 0;
         overflow: hidden;
       }
 /* transition: max-height var(--transition-duration); */
-.screen[data-name="list"] .detail .info img {
+.screen.list .detail .info img {
           height: auto;
           max-width: 100%;
           max-height: 100%;
           margin: 0;
         }
-.screen[data-name="list"] .detail h5.info {
+.screen.list .detail h5.info {
         margin: 0;
       }
 .exitScreenButton {
@@ -716,6 +716,10 @@ button.styled.margin {
 .button.styled.margin {
     margin: 26px auto 0;
   }
+button.inline,
+.button.inline {
+  display: inline-block;
+}
 button.inverse {
   background: #fafafa;
   box-shadow: none;
@@ -738,6 +742,39 @@ button:disabled {
   width: 26px;
   height: auto;
   margin: 4em auto 1em;
+}
+.videoEmbed {
+  display: block;
+  height: 95vh;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.rotate {
+  transform-origin: 50% 50%;
+  -webkit-animation: rotation 5s;
+          animation: rotation 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
 }
 #warning {
   width: 100vw;
@@ -807,39 +844,9 @@ button:disabled {
     max-width: 400px;
     padding: 15px;
   }
-.videoEmbed {
-  display: block;
-  height: 95vh;
-  margin: 0 auto;
-  max-width: 100%;
-}
-.rotate {
-  transform-origin: 50% 50%;
-  -webkit-animation: rotation 5s;
-          animation: rotation 5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-@-webkit-keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(359deg);
-  }
-}
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(359deg);
-  }
-}
+#toofar-warning .container button {
+      margin: 1em auto;
+    }
 #onboardings {
   width: calc(100vw - 60px);
   height: calc(100vh - 110px);
@@ -1399,6 +1406,50 @@ svg.leaflet-image-layer.leaflet-interactive path {
     text-align: center;
     transform: translateX(-50%);
   }
+.leaflet-marker-icon[title^='Sandkasten'] {
+  background: #f08;
+  border-radius: 100%;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes blink {
+  0% {
+    box-shadow: #f08 0 0 0 0;
+  }
+
+  25% {
+    box-shadow: #f08 0 0 0 0;
+  }
+
+  75% {
+    box-shadow: #f08 0 0 0 8px;
+  }
+
+  100% {
+    box-shadow: #f08 0 0 0 0;
+  }
+}
+@keyframes blink {
+  0% {
+    box-shadow: #f08 0 0 0 0;
+  }
+
+  25% {
+    box-shadow: #f08 0 0 0 0;
+  }
+
+  75% {
+    box-shadow: #f08 0 0 0 8px;
+  }
+
+  100% {
+    box-shadow: #f08 0 0 0 0;
+  }
+}
 body.three-running {
   overflow: hidden;
 }
@@ -1456,13 +1507,38 @@ body.three-running {
     background: transparent;
   }
 #three-video {
+  width: 0;
+  height: 0;
   left: 0;
   top: 0;
   position: absolute;
-  height: 0;
-  width: 0;
   overflow: hidden;
 }
+#toggle-animation-button {
+  width: 66px;
+  height: 48px;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  display: none;
+}
+#toggle-animation-button .visible {
+    display: block;
+  }
+#toggle-animation-button svg {
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+  }
+#toggle-animation-button .pause {
+    display: none;
+  }
+#toggle-animation-button.play .play {
+      display: none;
+    }
+#toggle-animation-button.play .pause {
+      display: block;
+    }
 @media screen and (max-height: 500px) and (orientation: landscape) {
   #map-container {
     font-size: 0.8em;
