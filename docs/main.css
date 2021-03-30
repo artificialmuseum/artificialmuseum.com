@@ -1406,17 +1406,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
     text-align: center;
     transform: translateX(-50%);
   }
-.leaflet-marker-icon[title^='Sandkasten'] {
+/* .leaflet-marker-icon[title^='Sandkasten'] {
   background: #f08;
   border-radius: 100%;
-  -webkit-animation-name: blink;
-          animation-name: blink;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-@-webkit-keyframes blink {
+  animation-name: blink;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+} */
+/* @keyframes blink {
   0% {
     box-shadow: #f08 0 0 0 0;
   }
@@ -1432,24 +1429,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   100% {
     box-shadow: #f08 0 0 0 0;
   }
-}
-@keyframes blink {
-  0% {
-    box-shadow: #f08 0 0 0 0;
-  }
-
-  25% {
-    box-shadow: #f08 0 0 0 0;
-  }
-
-  75% {
-    box-shadow: #f08 0 0 0 8px;
-  }
-
-  100% {
-    box-shadow: #f08 0 0 0 0;
-  }
-}
+} */
 body.three-running {
   overflow: hidden;
 }
