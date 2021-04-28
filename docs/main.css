@@ -444,6 +444,7 @@ footer.main nav li {
       display: inline-block;
       font-size: 0.8em;
       padding: 96px 0 150px;
+      margin: 96px 0 0;
       width: 100vw;
     }
 .screen[data-name="about"].visible footer a {
