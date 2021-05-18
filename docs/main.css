@@ -1408,6 +1408,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
     transform: translateX(-50%);
   }
 body:not(.three-running) .leaflet-marker-icon[title^='Prater'],
+  body:not(.three-running) .leaflet-marker-icon[title='TheSystem'],
+  body:not(.three-running) .leaflet-marker-icon[title^='Stadt, Land'],
+  body:not(.three-running) .leaflet-marker-icon[title^='Bahnhof Ottakring'],
+  body:not(.three-running) .leaflet-marker-icon[title^='Johann Nepo'],
   body:not(.three-running) .leaflet-marker-icon[title^='Pitch Control'] {
     background: #f08;
     border-radius: 100%;
