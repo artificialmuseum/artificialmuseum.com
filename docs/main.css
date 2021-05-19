@@ -285,6 +285,11 @@ nav li.active {
               text-decoration: underline 2px;
       color: #0c0c0c;
     }
+nav li a.active {
+      -webkit-text-decoration: underline 2px;
+              text-decoration: underline 2px;
+      color: #0c0c0c;
+    }
 nav li:last-child {
       margin: 0;
     }
@@ -308,6 +313,9 @@ header.main nav.right {
 header.main nav.left {
     float: left;
   }
+header.main a {
+    text-decoration: none;
+  }
 footer.main {
   background-color: #fafafa;
   display: inline-block;
@@ -322,6 +330,12 @@ footer.main nav.right {
 footer.main nav.left {
     float: left;
   }
+footer.main a {
+    text-decoration: none;
+  }
+.nav {
+  cursor: pointer;
+}
 header.main {
   top: 0;
   padding: 7px 15px 0;
@@ -608,6 +622,13 @@ footer.main nav li {
 .screen.list .detail h5.info {
         margin: 0;
       }
+.friends a img {
+    margin: 0 1em 0 0;
+  }
+.friends img.koer {
+    display: inline-block;
+    margin: 0 1em 2em 0;
+  }
 .exitScreenButton {
   width: 26px;
   height: 26px;
