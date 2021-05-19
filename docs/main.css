@@ -361,6 +361,9 @@ footer.main nav li {
   top: 35px;
   width: 100%;
 }
+.screen.sub {
+    top: calc(35px + 7px);
+  }
 .screen h2,
   .screen h3,
   .screen h4 {
@@ -658,6 +661,7 @@ button {
     sans-serif;
   letter-spacing: 1px;
   outline: none;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-user-select: none;
@@ -681,6 +685,7 @@ button {
     sans-serif;
   letter-spacing: 1px;
   outline: none;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-user-select: none;
@@ -1407,38 +1412,20 @@ svg.leaflet-image-layer.leaflet-interactive path {
     text-align: center;
     transform: translateX(-50%);
   }
-body:not(.three-running) .leaflet-marker-icon[title^='Prater'],
-  body:not(.three-running) .leaflet-marker-icon[title='TheSystem'],
-  body:not(.three-running) .leaflet-marker-icon[title^='Stadt, Land'],
-  body:not(.three-running) .leaflet-marker-icon[title^='Bahnhof Ottakring'],
-  body:not(.three-running) .leaflet-marker-icon[title^='Johann Nepo'],
-  body:not(.three-running) .leaflet-marker-icon[title^='Pitch Control'] {
+/*
+body:not(.three-running) {
+  .leaflet-marker-icon[title^='Bahnhof Ottakring'],
+  .leaflet-marker-icon[title='TheSystem'],
+  .leaflet-marker-icon[title^='Stadt, Land'],
+  .leaflet-marker-icon[title^='Johann Nepomuk'] {
     background: #f08;
     border-radius: 100%;
-    -webkit-animation-name: blink;
-            animation-name: blink;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-  }
-@-webkit-keyframes blink {
-  0% {
-    box-shadow: #f08 0 0 0 0;
-  }
-
-  25% {
-    box-shadow: #f08 0 0 0 0;
-  }
-
-  75% {
-    box-shadow: #f08 0 0 0 8px;
-  }
-
-  100% {
-    box-shadow: #f08 0 0 0 0;
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
   }
 }
+
 @keyframes blink {
   0% {
     box-shadow: #f08 0 0 0 0;
@@ -1456,6 +1443,7 @@ body:not(.three-running) .leaflet-marker-icon[title^='Prater'],
     box-shadow: #f08 0 0 0 0;
   }
 }
+*/
 body.three-running {
   overflow: hidden;
 }
@@ -1472,6 +1460,7 @@ body.three-running {
   position: relative;
   top: 0;
   left: 0;
+  text-align: center;
 }
 #hud .w {
     background-color: rgba(0, 0, 0, 0.4);
