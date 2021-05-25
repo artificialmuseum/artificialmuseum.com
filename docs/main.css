@@ -348,14 +348,14 @@ header.main .logo span {
       float: left;
       font-size: 18px;
       font-weight: 500;
-      margin: -2px 5px 0;
+      margin: -1px 5px 0;
       padding: 0;
       line-height: 1;
     }
 header.main .logo svg {
       cursor: pointer;
       float: left;
-      height: 15px;
+      height: 17px;
     }
 footer.main {
   bottom: 0;
@@ -370,7 +370,7 @@ footer.main nav li {
   left: 0;
   min-height: calc(100% - 70px);
   overflow-x: hidden;
-  padding: 20px;
+  padding: 15px 15px 15px 20px;
   position: absolute;
   top: 35px;
   width: 100%;
@@ -382,10 +382,10 @@ footer.main nav li {
   .screen h3,
   .screen h4 {
     font-weight: 500;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
 .screen h2 {
-    font-size: 2em;
+    font-size: 1.7em;
   }
 .screen h3 {
     font-size: 1.1em;
@@ -532,16 +532,63 @@ footer.main nav li {
           line-height: 1.3em;
           margin: 0;
         }
+.screen .artist.detail .artifacts .artifact, .screen .artist.detail .visualizations .artifact {
+        padding: 0 0 1em;
+      }
+.screen .artist.detail .artifacts h3, .screen .artist.detail .visualizations h3 {
+        margin: 0.1em 0 0.5em;
+      }
+.screen .artist.detail .artifacts h4, .screen .artist.detail .visualizations h4 {
+        text-align: right;
+        font-size: 1em;
+        color: #666;
+        border-top: 1px solid #e0e0e0;
+      }
+.screen.list .location.detail .logo {
+          float: left;
+          width: 30px;
+          height: auto;
+        }
+.screen.list .location.detail .artifact {
+          border-top: 1px solid #e0e0e0;
+        }
+.screen.list .location.detail h3 {
+          margin: 0;
+          line-height: 28px;
+        }
+.screen.list .location.detail .title {
+          margin: 1em 0 0.5em;
+        }
+.screen.list .location .info, .screen.list .artist .info {
+        display: inline-block;
+      }
+.screen.list .location .artifact, .screen.list .artist .artifact {
+        display: inline-block;
+        clear: both;
+      }
+.screen.list .location .artifact h5.nav, .screen.list .artist .artifact h5.nav {
+          margin: 0.2em 0 1em;
+        }
+.screen.list .location .artifact picture, .screen.list .artist .artifact picture {
+          float: left;
+          width: 40%;
+        }
+.screen.list .location .artifact .info, .screen.list .artist .artifact .info {
+          clear: none;
+          float: right;
+          width: 55%;
+        }
+.screen.list .location .artifact .info h3, .screen.list .artist .artifact .info h3 {
+            margin: 0.5em 0 0;
+          }
 .screen.list .detail {
-      border-top: 1px solid #aaa;
+      border-top: 1px solid #e0e0e0;
       padding: 0 0 1em;
       position: relative;
       width: 100%;
     }
 .screen.list .detail.visible .info {
-          max-height: 1000px;
-
-          /* transition: max-height var(--transition-duration); */
+          display: inherit;
         }
 .screen.list .detail.visible .info .preview {
             margin: 1em 0;
@@ -560,25 +607,35 @@ footer.main nav li {
         }
 .screen.list .detail h3 {
         cursor: pointer;
-        font-size: 1.6em;
+        font-size: 24px;
         margin: 0.5em 0;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
       }
 .screen.list .detail .title {
-        font-size: 0.9em;
         line-height: 1.4;
         margin: 1em 0 0;
         text-transform: uppercase;
       }
 .screen.list .detail .title span {
           display: inline-block;
-          height: 1.5em;
+          font-size: 15px;
           vertical-align: top;
+        }
+.screen.list .detail h5.title img {
+          width: 18px;
+        }
+.screen.list .detail h5.title span {
+          font-size: 12px;
+          line-height: 18px;
         }
 .screen.list .detail .logo {
         width: 1.5em;
         height: 1.5em;
         margin: 0 0.2em 0 0;
+      }
+.screen.list .detail .artists,
+      .screen.list .detail .artists3d {
+        font-size: 18px;
       }
 .screen.list .detail .artists li, .screen.list .detail .artists3d li {
           display: inline-block;
@@ -606,18 +663,16 @@ footer.main nav li {
         display: block;
         float: right;
         margin: 3em auto 0;
-        width: 23px;
+        width: 15px;
       }
 .screen.list .detail .info {
-        max-height: 0;
-        overflow: hidden;
+        display: none;
       }
-/* transition: max-height var(--transition-duration); */
 .screen.list .detail .info img {
           height: auto;
           max-width: 100%;
           max-height: 100%;
-          margin: 0;
+          margin: 0 0.3em 0 0;
         }
 .screen.list .detail h5.info {
         margin: 0;
@@ -638,7 +693,17 @@ footer.main nav li {
 }
 .screen-visible .screen.visible {
   display: block;
+  overflow: scroll;
 }
+.screen-visible .screen.visible.list {
+    border-top: 1px solid #e0e0e0;
+  }
+.screen-visible .screen.visible.list nav {
+      margin: 3px 0 0;
+    }
+.screen-visible .screen.visible.list nav ul {
+        float: right;
+      }
 #map-container {
   width: calc(100vw - 30px);
   height: calc(100% - 80px);
@@ -1245,7 +1310,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-popup-content h3 {
     font-weight: 500;
     margin: 10px 0;
-    text-transform: uppercase;
   }
 .leaflet-popup-content h4 {
     margin: 13px 0 0;
@@ -1573,21 +1637,21 @@ body.three-running {
 }
 @media screen and (min-width: 800px) {
     .screen-visible #map-container {
-      width: calc(100vw - 420px);
+      width: calc(100vw - 520px);
     }
 
     .screen-visible #timeout-warning {
-      width: calc(100vw - 430px);
+      width: calc(100vw - 530px);
     }
 
     .screen-visible #toofar-warning {
-      width: calc(100vw - 430px);
+      width: calc(100vw - 530px);
     }
 
   .screen.visible {
     left: auto;
     right: 0;
-    width: 400px;
+    width: 500px;
   }
 
   .detail {
@@ -1617,14 +1681,14 @@ body.three-running {
 }
 @media screen and (min-width: 1200px) {
   .screen.visible {
-    width: 500px;
+    width: 600px;
   }
     .screen-visible #map-container {
-      width: calc(100vw - 520px);
+      width: calc(100vw - 620px);
     }
 
     .screen-visible #timeout-warning {
-      width: calc(100vw - 530px);
+      width: calc(100vw - 630px);
     }
 
   #hud-exit-button {
@@ -1668,13 +1732,13 @@ body.three-running {
 }
 @media screen and (min-width: 1600px) {
   .screen.visible {
-    width: 600px;
+    width: 700px;
   }
     .screen-visible #map-container {
-      width: calc(100vw - 620px);
+      width: calc(100vw - 720px);
     }
 
     .screen-visible #timeout-warning {
-      width: calc(100vw - 630px);
+      width: calc(100vw - 730px);
     }
 }
