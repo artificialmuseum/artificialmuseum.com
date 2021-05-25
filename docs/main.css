@@ -196,7 +196,7 @@ footer.main {
   scrollbar-width: thin;
 }
 .visible {
-  display: inherit !important;
+  display: inherit;
 }
 body {
   background-color: #fafafa;
@@ -575,12 +575,18 @@ footer.main nav li {
         }
 .screen.list .location .artifact .info, .screen.list .artist .artifact .info {
           clear: none;
-          float: right;
+          float: left;
           width: 55%;
+          margin: 0 0 0 4.5%;
         }
 .screen.list .location .artifact .info h3, .screen.list .artist .artifact .info h3 {
             margin: 0.5em 0 0;
           }
+.screen.list .location .artifact .button.styled, .screen.list .artist .artifact .button.styled {
+          float: left;
+          margin: 1em 0 0 4.5%;
+          max-width: 55%;
+        }
 .screen.list .detail {
       border-top: 1px solid #e0e0e0;
       padding: 0 0 1em;
@@ -593,6 +599,13 @@ footer.main nav li {
 .screen.list .detail.visible .info .preview {
             margin: 1em 0;
           }
+.screen.list .detail.visible .artists,
+        .screen.list .detail.visible .artists3d {
+          font-size: 18px;
+        }
+.screen.list .detail.visible .artists li a, .screen.list .detail.visible .artists3d li a {
+              display: inline-block;
+            }
 .screen.list .detail.visible a.info img {
           margin: 2px 0 0;
         }
@@ -645,9 +658,6 @@ footer.main nav li {
 .screen.list .detail .artists li span, .screen.list .detail .artists3d li span {
             margin: 0 0.5em 0 0;
             float: left;
-          }
-.screen.list .detail .artists li a, .screen.list .detail .artists3d li a {
-            display: inline-block;
           }
 .screen.list .detail .artists li img, .screen.list .detail .artists3d li img {
             height: 1em;
