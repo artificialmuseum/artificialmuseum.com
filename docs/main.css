@@ -196,7 +196,7 @@ footer.main {
   scrollbar-width: thin;
 }
 .visible {
-  display: inherit;
+  display: inherit !important;
 }
 body {
   background-color: #fafafa;
@@ -293,6 +293,18 @@ nav li a.active {
 nav li:last-child {
       margin: 0;
     }
+.nav.menu.toggle.list {
+  text-decoration: none;
+}
+.nav.menu.toggle.list span:last-child {
+      color: #666;
+    }
+.nav.menu.toggle.list.exit span:first-child {
+        color: #666;
+      }
+.nav.menu.toggle.list.exit span:last-child {
+        color: #0c0c0c;
+      }
 canvas {
   display: block;
   left: 0;
@@ -604,7 +616,7 @@ footer.main nav li {
           font-size: 18px;
         }
 .screen.list .detail.visible .artists li a, .screen.list .detail.visible .artists3d li a {
-              display: inline-block;
+              display: inline-block !important;
             }
 .screen.list .detail.visible a.info img {
           margin: 2px 0 0;
@@ -651,7 +663,7 @@ footer.main nav li {
         font-size: 18px;
       }
 .screen.list .detail .artists li, .screen.list .detail .artists3d li {
-          display: inline-block;
+          display: inline-block !important;
           margin: 0 0 0.3em;
           width: 100%;
         }
@@ -687,10 +699,10 @@ footer.main nav li {
 .screen.list .detail h5.info {
         margin: 0;
       }
-.friends a img {
+.partners a img {
     margin: 0 1em 0 0;
   }
-.friends img.koer {
+.partners img.koer {
     display: inline-block;
     margin: 0 1em 2em 0;
   }
