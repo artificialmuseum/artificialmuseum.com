@@ -586,6 +586,7 @@ footer.main nav li {
           clear: none;
           width: 55%;
           margin: 0 0 0 4.5%;
+          float: right;
         }
 .screen.list .location .artifact .info h3, .screen.list .artist .artifact .info h3 {
             margin: 0.5em 0;
