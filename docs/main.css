@@ -380,9 +380,9 @@ footer.main nav li {
   background-color: #fafafa;
   display: none;
   left: 0;
-  min-height: calc(100% - 70px);
+  height: calc(100% - 70px);
   overflow-x: hidden;
-  padding: 15px 15px 15px 20px;
+  padding: 0 15px 15px 20px;
   position: absolute;
   top: 35px;
   width: 100%;
@@ -561,9 +561,6 @@ footer.main nav li {
           width: 30px;
           height: auto;
         }
-.screen.list .location.detail .artifact {
-          border-top: 1px solid #e0e0e0;
-        }
 .screen.list .location.detail h3 {
           margin: 0;
           line-height: 28px;
@@ -587,12 +584,14 @@ footer.main nav li {
         }
 .screen.list .location .artifact .info, .screen.list .artist .artifact .info {
           clear: none;
-          float: left;
           width: 55%;
           margin: 0 0 0 4.5%;
         }
 .screen.list .location .artifact .info h3, .screen.list .artist .artifact .info h3 {
-            margin: 0.5em 0 0;
+            margin: 0.5em 0;
+          }
+.screen.list .location .artifact .info h4, .screen.list .artist .artifact .info h4 {
+            margin: 0.2em 0;
           }
 .screen.list .location .artifact .button.styled, .screen.list .artist .artifact .button.styled {
           float: left;
@@ -600,10 +599,11 @@ footer.main nav li {
           max-width: 55%;
         }
 .screen.list .detail {
-      border-top: 1px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
       padding: 0 0 1em;
       position: relative;
       width: 100%;
+      display: inline-block !important;
     }
 .screen.list .detail.visible .info {
           display: inherit;
@@ -618,6 +618,12 @@ footer.main nav li {
 .screen.list .detail.visible .artists li a, .screen.list .detail.visible .artists3d li a {
               display: inline-block !important;
             }
+.screen.list .detail.visible .artifact {
+          border-bottom: 1px solid #e0e0e0;
+        }
+.screen.list .detail.visible .artifact:last-child {
+            border-bottom: 0 none;
+          }
 .screen.list .detail.visible a.info img {
           margin: 2px 0 0;
         }
@@ -681,12 +687,6 @@ footer.main nav li {
           margin: 1em 0;
           width: auto;
         }
-.screen.list .detail .arrow-up {
-        display: block;
-        float: right;
-        margin: 3em auto 0;
-        width: 15px;
-      }
 .screen.list .detail .info {
         display: none;
       }
@@ -713,17 +713,39 @@ footer.main nav li {
   right: 15px;
   top: 60px;
 }
+.arrow {
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 15px;
+}
+.arrow.up {
+    display: none;
+  }
 .screen-visible .screen.visible {
   display: block;
-  overflow: scroll;
 }
+.screen-visible .screen.visible .detail.visible .arrow.up {
+      display: block;
+    }
+.screen-visible .screen.visible .detail.visible .arrow.down {
+      display: none;
+    }
+.screen-visible .screen.visible .sub {
+    width: auto;
+    overflow-y: scroll;
+    margin: 15px 0 0;
+  }
 .screen-visible .screen.visible.list {
     border-top: 1px solid #e0e0e0;
   }
 .screen-visible .screen.visible.list nav {
-      margin: 3px 0 0;
+      margin: 15px 0;
+      width: 100%;
     }
 .screen-visible .screen.visible.list nav ul {
+        display: inline-block;
         float: right;
       }
 #map-container {
@@ -1674,10 +1696,6 @@ body.three-running {
     left: auto;
     right: 0;
     width: 500px;
-  }
-
-  .detail {
-    display: inline-block;
   }
           .screen[data-name="about"].visible .team li h5 {
             font-size: inherit;
