@@ -579,14 +579,14 @@ footer.main nav li {
           margin: 0.2em 0 1em;
         }
 .screen.list .location .artifact picture, .screen.list .artist .artifact picture {
-          float: left;
-          width: 40%;
+          float: right;
+          width: 50%;
         }
 .screen.list .location .artifact .info, .screen.list .artist .artifact .info {
           clear: none;
-          width: 55%;
-          margin: 0 0 0 4.5%;
-          float: right;
+          width: 45%;
+          margin: 0 4.5% 0 0;
+          float: left;
         }
 .screen.list .location .artifact .info h3, .screen.list .artist .artifact .info h3 {
             margin: 0.5em 0;
@@ -594,11 +594,6 @@ footer.main nav li {
 .screen.list .location .artifact .info h4, .screen.list .artist .artifact .info h4 {
             margin: 0.2em 0;
           }
-.screen.list .location .artifact .button.styled, .screen.list .artist .artifact .button.styled {
-          float: left;
-          margin: 1em 0 0 4.5%;
-          max-width: 55%;
-        }
 .screen.list .detail {
       border-bottom: 1px solid #e0e0e0;
       padding: 0 0 1em;
@@ -1542,20 +1537,37 @@ svg.leaflet-image-layer.leaflet-interactive path {
     text-align: center;
     transform: translateX(-50%);
   }
-/*
-body:not(.three-running) {
-  .leaflet-marker-icon[title^='Bahnhof Ottakring'],
-  .leaflet-marker-icon[title='TheSystem'],
-  .leaflet-marker-icon[title^='Stadt, Land'],
-  .leaflet-marker-icon[title^='Johann Nepomuk'] {
+body:not(.three-running) .leaflet-marker-icon[title="Kaiserwiese"],
+  body:not(.three-running) .leaflet-marker-icon[title^="Bahnhof Ottakring"],
+  body:not(.three-running) .leaflet-marker-icon[title^="Johann Nepomuk"],
+  body:not(.three-running) .leaflet-marker-icon[title="TheSystem"],
+  body:not(.three-running) .leaflet-marker-icon[title^="Stadt, Land,"] {
     background: #f08;
     border-radius: 100%;
-    animation-name: blink;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: blink;
+            animation-name: blink;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+@-webkit-keyframes blink {
+  0% {
+    box-shadow: #f08 0 0 0 0;
+  }
+
+  25% {
+    box-shadow: #f08 0 0 0 0;
+  }
+
+  75% {
+    box-shadow: #f08 0 0 0 8px;
+  }
+
+  100% {
+    box-shadow: #f08 0 0 0 0;
   }
 }
-
 @keyframes blink {
   0% {
     box-shadow: #f08 0 0 0 0;
@@ -1573,7 +1585,6 @@ body:not(.three-running) {
     box-shadow: #f08 0 0 0 0;
   }
 }
-*/
 body.three-running {
   overflow: hidden;
 }
