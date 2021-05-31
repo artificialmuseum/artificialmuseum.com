@@ -210,7 +210,7 @@ body {
     helvetica,
     arial,
     sans-serif;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 22px;
   margin: 0;
   min-height: 100vh;
@@ -273,7 +273,7 @@ nav li {
     color: #333;
     cursor: pointer;
     float: left;
-    font-size: 17px;
+    font-size: 1.1em;
     margin: 0 1em 0 0;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -358,7 +358,7 @@ header.main .logo {
 header.main .logo span {
       cursor: pointer;
       float: left;
-      font-size: 18px;
+      font-size: 1.2em;
       font-weight: 500;
       margin: -1px 5px 0;
       padding: 0;
@@ -374,7 +374,7 @@ footer.main {
   padding: 10px 15px;
 }
 footer.main nav li {
-      font-size: 15px;
+      font-size: 0.9em;
     }
 .screen {
   background-color: #fafafa;
@@ -435,7 +435,7 @@ footer.main nav li {
       }
 .screen[data-name="about"].visible .headers h2 {
         float: left;
-        font-size: 45px;
+        font-size: 2.8em;
         text-transform: none;
         margin: 1px 0 0;
         line-height: 0.7;
@@ -446,7 +446,7 @@ footer.main nav li {
         }
 .screen[data-name="about"].visible .slogan {
       letter-spacing: -1px;
-      font-size: 50px;
+      font-size: 3em;
       font-weight: 500;
       line-height: 1;
       padding: 0 25px;
@@ -495,7 +495,7 @@ footer.main nav li {
         height: 50px;
         float: right;
         position: absolute;
-        right: 24px;
+        right: 1.5em;
       }
 .screen[data-name="about"].visible footer .social a {
         display: inline-block;
@@ -535,12 +535,12 @@ footer.main nav li {
         text-align: center;
       }
 .screen[data-name="about"].visible .team li h5 {
-          font-size: 14px;
+          font-size: 0.9em;
           line-height: 25px;
           margin: 4vw 0 0.3em;
         }
 .screen[data-name="about"].visible .team li p {
-          font-size: 12px;
+          font-size: 0.8em;
           line-height: 1.3em;
           margin: 0;
         }
@@ -609,7 +609,7 @@ footer.main nav li {
           }
 .screen.list .detail.visible .artists,
         .screen.list .detail.visible .artists3d {
-          font-size: 18px;
+          font-size: 1.2em;
         }
 .screen.list .detail.visible .artists li a, .screen.list .detail.visible .artists3d li a {
               display: inline-block !important;
@@ -634,7 +634,7 @@ footer.main nav li {
         }
 .screen.list .detail h3 {
         cursor: pointer;
-        font-size: 24px;
+        font-size: 1.5em;
         margin: 0.5em 0;
         /* text-transform: uppercase; */
       }
@@ -645,15 +645,15 @@ footer.main nav li {
       }
 .screen.list .detail .title span {
           display: inline-block;
-          font-size: 15px;
+          font-size: 0.9em;
           vertical-align: top;
         }
 .screen.list .detail h5.title img {
-          width: 18px;
+          width: 1.2em;
         }
 .screen.list .detail h5.title span {
-          font-size: 12px;
-          line-height: 18px;
+          font-size: 0.8em;
+          line-height: 1.2em;
         }
 .screen.list .detail .logo {
         width: 1.5em;
@@ -662,7 +662,7 @@ footer.main nav li {
       }
 .screen.list .detail .artists,
       .screen.list .detail .artists3d {
-        font-size: 18px;
+        font-size: 1.2em;
       }
 .screen.list .detail .artists li, .screen.list .detail .artists3d li {
           display: inline-block !important;
@@ -822,31 +822,31 @@ button {
 }
 button.styled {
   background: #0c0c0c;
-  border-radius: 25px;
+  border-radius: 2em;
   box-shadow:
     5px 0 10px #e0e0e0,
     -5px 0 10px  #fff;
   display: block;
-  font-size: 13px;
+  font-size: 1em;
   margin: 0 auto;
-  padding: 10px 15px;
+  padding: 0.8em;
 }
 button.styled.margin {
-    margin: 26px auto 0;
+    margin: 1em auto 0;
   }
 .button.styled {
   background: #0c0c0c;
-  border-radius: 25px;
+  border-radius: 2em;
   box-shadow:
     5px 0 10px #e0e0e0,
     -5px 0 10px  #fff;
   display: block;
-  font-size: 13px;
+  font-size: 1em;
   margin: 0 auto;
-  padding: 10px 15px;
+  padding: 0.8em;
 }
 .button.styled.margin {
-    margin: 26px auto 0;
+    margin: 1em auto 0;
   }
 button.inline,
 .button.inline {
@@ -1681,6 +1681,9 @@ body.three-running {
   }
 }
 @media screen and (min-width: 500px) {
+  body {
+    font-size: 16px;
+  }
       .screen[data-name="about"].visible .commissioned img {
         margin: 0 3% 0 0;
         float: left;
