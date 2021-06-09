@@ -190,6 +190,9 @@ footer.main {
 #onboardings {
   z-index: 4000;
 }
+.popup {
+  z-index: 5000;
+}
 * {
   box-sizing: border-box;
   scrollbar-color: #0c0c0c #fafafa;
@@ -732,6 +735,7 @@ footer.main nav li {
     width: auto;
     overflow-y: scroll;
     margin: 15px 0 0;
+    max-width: 100%;
   }
 .screen-visible .screen.visible.list {
     border-top: 1px solid #e0e0e0;
@@ -915,7 +919,7 @@ button:disabled {
   display: none;
   left: 0;
   position: fixed;
-  top: 0;
+  top: 36px;
   text-align: center;
 }
 #warning .container {
@@ -936,7 +940,7 @@ button:disabled {
   left: 15px;
   position: fixed;
   text-align: center;
-  top: 40px;
+  top: 36px;
   width: calc(100vw - 30px);
 }
 #timeout-warning .container {
@@ -968,7 +972,7 @@ button:disabled {
   left: 15px;
   position: fixed;
   text-align: center;
-  top: 40px;
+  top: 36px;
   width: calc(100vw - 30px);
 }
 #toofar-warning .container {
@@ -979,6 +983,21 @@ button:disabled {
 #toofar-warning .container button {
       margin: 1em auto;
     }
+.popup {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fafafa;
+  display: none;
+  left: 15px;
+  position: fixed;
+  text-align: center;
+  width: calc(100vw - 30px);
+  top: 36px;
+}
+.popup .container {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 15px;
+  }
 #onboardings {
   width: calc(100vw - 60px);
   height: calc(100vh - 110px);
@@ -1360,7 +1379,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-popup-content p.artist {
       font-size: 1.1em;
     }
-.leaflet-popup-content .artists3d-container {
+.leaflet-popup-content .artists3d-container,
+  .leaflet-popup-content .sound-container {
     font-size: 0.7em;
   }
 .leaflet-popup-tip-container {
@@ -1700,11 +1720,15 @@ body.three-running {
     }
 
     .screen-visible #timeout-warning {
-      width: calc(100vw - 530px);
+      width: calc(100vw - 515px);
     }
 
     .screen-visible #toofar-warning {
-      width: calc(100vw - 530px);
+      width: calc(100vw - 515px);
+    }
+
+    .screen-visible .popup {
+      width: calc(100vw - 515px);
     }
 
   .screen.visible {
@@ -1743,7 +1767,11 @@ body.three-running {
     }
 
     .screen-visible #timeout-warning {
-      width: calc(100vw - 630px);
+      width: calc(100vw - 615px);
+    }
+
+    .screen-visible .popup {
+      width: calc(100vw - 615px);
     }
 
   #hud-exit-button {
@@ -1794,6 +1822,10 @@ body.three-running {
     }
 
     .screen-visible #timeout-warning {
-      width: calc(100vw - 730px);
+      width: calc(100vw - 720px);
+    }
+
+    .screen-visible .popup {
+      width: calc(100vw - 720px);
     }
 }
