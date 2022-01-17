@@ -7,7 +7,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "grundstein-server --dir ./docs --port 8000 --cors '*'",
-    "build": "cp ../ar/docs/* ./docs/ -r"
+    "build": "./src/bin.js"
   },
   "repository": {
     "type": "git",
