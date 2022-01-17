@@ -63,6 +63,10 @@ const run = async () => {
     await fs.writeFile(dest, content)
   }))
 
+  const cnamePath = path.join(cwd, 'src', 'CNAME')
+  const CNAME = await fs.readFile(cnamePath)
+  await fs.writeFile(path.join(args.out, 'CNAME'), CNAME)
+
   log.success('@artificialmuseum/prod:', 'copied all needed files')
 }
 
