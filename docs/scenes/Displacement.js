@@ -1,0 +1,1 @@
+import{az as a,aK as e,aP as s,an as n,ah as i,R as t,aO as d}from"../vendor.js";class l{init(l){var{engine:m}=l,{videoElement:o}=m,r=new a(o);r.minFilter=e;var p=new s({map:r,displacementMap:r,displacementScale:1,side:n}),v=new i(3,1.66,50,32),w=new t(v,p);w.position.set(0,1.5,-.5);var c=new d;c.add(w),this.model=c}}export{l as default};
