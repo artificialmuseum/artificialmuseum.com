@@ -1,0 +1,1 @@
+var e=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",o=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"no";return e.toLowerCase().includes(o.toLowerCase())};export{e as n};

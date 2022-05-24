@@ -1,0 +1,1 @@
+var r=function(){var r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};return r||(r={}),Object.fromEntries(Object.entries(e).map((e=>{var[t,n]=e;return[t,r.hasOwnProperty(t)?r[t]:n]})))};export{r as m};
