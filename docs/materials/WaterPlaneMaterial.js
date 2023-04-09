@@ -1,1 +1,1 @@
-export{bb as WaterPlaneMaterial}from"../vendor.js";
+export{bc as WaterPlaneMaterial}from"../vendor.js";
