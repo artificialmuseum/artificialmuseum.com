@@ -1,0 +1,1 @@
+var i={Hit:1,Float:2,KinectCloud:3,Displacement:4,Bubbles:5,LightCube:6,FakeMirror:7,BrainWave:8,Latk:9,MolecularVortex:10,Ply:11,LiquidDisplacement:12,GreenscreenPlane:13,LiquidLitto:14,GameoverOrReplay:15,Moon:16,NadiasVision:17,AudioAnalyserLights:18,PinkBlobs:19,Boids:21,FakeMirrorImages:22,ArtificialRoom:23,LatkVideo:24,PlyExhibition:25};export{i as S};
