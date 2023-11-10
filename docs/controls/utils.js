@@ -1,0 +1,1 @@
+var e=Math.PI/2;function t(e){var t=e.getBoundingClientRect(),n=window.pageXOffset||document.documentElement.scrollLeft,o=window.pageYOffset||document.documentElement.scrollTop;return{top:t.top+o,left:t.left+n}}export{e as PI_2,t as getOffset};
